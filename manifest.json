@@ -5,7 +5,7 @@
   "theme_color": "#f26328",
   "background_color": "#41838e",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "/service-workers-talk",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
