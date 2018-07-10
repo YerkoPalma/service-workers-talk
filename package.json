@@ -1,0 +1,55 @@
+{
+  "name": "example",
+  "description": "nothing",
+  "author": "YerkoPalma",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "files": [
+    "index.js"
+  ],
+  "env": {
+    "FILE_LIST": [
+      "/",
+      "/bundle.js",
+      "/bundle.css"
+    ]
+  },
+  "scripts": {
+    "test": "standard --verbose | snazzy && npm run deps",
+    "gen": "choo-scaffold",
+    "deps": "dependency-check .",
+    "start": "budo index.js:bundle.js -H 0.0.0.0 -p 8080 -- -t brfs -t sheetify -p [ css-extract -o bundle.css ]",
+    "build": "npm run build:static && npm run build:sw && npm run build:js",
+    "build:static": "mkdir -p dist && cp favicon.ico index.html manifest.json dist && cp -R assets/* dist",
+    "build:js": "browserify -p tinyify -t brfs -t sheetify -p [ css-extract -o dist/bundle.css ] -e index.js -o dist/bundle.js",
+    "build:sw": "browserify -p tinyify -e sw.js -o dist/sw.js",
+    "deploy": "npm run build && touch dist/.nojekyll && gh-pages -d dist -a -t"
+  },
+  "repository": "YerkoPalma/example",
+  "license": "MIT",
+  "dependencies": {
+    "choo": "^6.12.1",
+    "choo-service-worker": "^2.4.0",
+    "choo-tts": "^1.0.1",
+    "hammerjs": "^2.0.8",
+    "highlight-syntax": "^3.0.2",
+    "highlight-syntax-pastel": "^1.0.0",
+    "markdown-it": "^8.4.1",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-meta": "0.0.1",
+    "sheetify": "^7.3.3",
+    "tachyons": "^4.10.0"
+  },
+  "devDependencies": {
+    "brfs": "^2.0.0",
+    "browserify": "^16.2.2",
+    "budo": "^11.3.2",
+    "choo-devtools": "^2.5.1",
+    "css-extract": "^1.3.0",
+    "gh-pages": "^1.2.0",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1",
+    "tinyify": "^2.4.3"
+  }
+}
