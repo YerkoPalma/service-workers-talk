@@ -10,9 +10,9 @@
   ],
   "env": {
     "FILE_LIST": [
-      "/",
-      "/bundle.js",
-      "/bundle.css"
+      "/service-workers-talk/",
+      "/service-workers-talk/bundle.js",
+      "/service-workers-talk/bundle.css"
     ]
   },
   "scripts": {

@@ -68,7 +68,7 @@ function store (state, emitter) {
     emitter.emit('tts:speak', audio)
   })
   emitter.on(events.LOAD, function (slide) {
-    fetch('../content/' + slide)
+    fetch(location.origin + (process.env.NODE_ENV === 'production' ? '/service-workers-talk' : '') + '/content/' + slide)
       .then(response => response.text())
       .then(text => {
         state.slides.content = md.render(text)
