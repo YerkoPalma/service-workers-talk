@@ -1,7 +1,7 @@
 ---
 title: Service workers | Estrategias para guardar
-next: estrategia_sync.md
-prev: estrategia_installar.md
+next: estrategia_usuario_code.md
+prev: estrategia_installar_code.md
 ---
 ## Interacción del usuario
 

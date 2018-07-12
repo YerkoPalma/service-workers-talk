@@ -1,7 +1,7 @@
 ---
 title: Service workers | Estrategias para mostrar
 next: .
-prev: estrategia_sw_template.md
+prev: estrategia_sw_template_code.md
 ---
 
 # Librerias útiles
