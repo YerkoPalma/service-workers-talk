@@ -17,6 +17,7 @@ app.use(require('./stores/offline'))
 app.use(require('./stores/slides'))
 
 app.route('/service-workers-talk', require('./views/main'))
+app.route('/', require('./views/main'))
 app.route('/*', require('./views/404'))
 
 app.mount('body')
