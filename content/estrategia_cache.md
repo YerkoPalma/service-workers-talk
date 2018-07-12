@@ -1,6 +1,6 @@
 ---
 title: Service workers | Estrategias para mostrar
-next: estrategia_red.md
+next: estrategia_cache_code.md
 prev: estrategias_para_mostrar.md
 ---
 ## Sólo cache

@@ -1,7 +1,7 @@
 ---
 title: Service workers | Estrategias para guardar
-next: estrategias_para_mostrar.md
-prev: estrategia_usuario.md
+next: estrategia_sync_code.md
+prev: estrategia_usuario_code.md
 ---
 ## BackgroundSync
 

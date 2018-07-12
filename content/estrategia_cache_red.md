@@ -1,7 +1,7 @@
 ---
 title: Service workers | Estrategias para mostrar
-next: estrategia_sw_template.md
-prev: estrategia_red.md
+next: estrategia_cache_red_code.md
+prev: estrategia_cache_code.md
 ---
 ## Cache primero, sino red
 

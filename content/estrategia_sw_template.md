@@ -1,7 +1,7 @@
 ---
 title: Service workers | Estrategias para mostrar
-next: librerias.md
-prev: estrategia_cache_red.md
+next: estrategia_sw_template_code.md
+prev: estrategia_cache_red_code.md
 ---
 ## ServiceWorker como template
 
